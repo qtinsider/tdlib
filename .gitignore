@@ -1,0 +1,5 @@
+/build/generate
+/build/tdlib
+/build/crypto
+/build/zlib
+*.tar.gz
