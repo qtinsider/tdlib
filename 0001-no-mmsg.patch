@@ -1,0 +1,25 @@
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 9bafd06..31f4ea4 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -213,6 +213,7 @@ if (NOT MSVC)
+   add_cxx_compiler_flag("-Qunused-arguments")
+   add_cxx_compiler_flag("-Wodr")
+   add_cxx_compiler_flag("-flto-odr-type-merging")
++  add_cxx_compiler_flag("-static-libstdc++")
+ 
+ #  add_cxx_compiler_flag("-Werror")
+ 
+diff --git a/tdutils/td/utils/port/config.h b/tdutils/td/utils/port/config.h
+index 04a08cc..29c3bd9 100644
+--- a/tdutils/td/utils/port/config.h
++++ b/tdutils/td/utils/port/config.h
+@@ -47,7 +47,7 @@
+ #endif
+ 
+ #if TD_LINUX
+-  #define TD_HAS_MMSG 1
++  #define TD_HAS_MMSG 0
+ #endif
+ 
+ // clang-format on
