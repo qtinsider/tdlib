@@ -2,6 +2,7 @@
 /build/tdlib
 /build/crypto
 /build/zlib
+*.tar.xz
 *.tar.gz
 openssl-*
 zlib-*
